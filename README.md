@@ -196,10 +196,6 @@ Row Level Security (RLS) policies ensure data privacy:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🔗 Links
 
 - **Live Demo**: [https://vercel.com/jatin787829-9645s-projects/v0-geminiapichatbotmain](https://vercel.com/jatin787829-9645s-projects/v0-geminiapichatbotmain)
@@ -216,5 +212,3 @@ If you encounter any issues or have questions:
 3. Join our community discussions
 
 ---
-
-Built with ❤️ using [v0.app](https://v0.app) - The AI-powered development platform

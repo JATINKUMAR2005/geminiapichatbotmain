@@ -1,7 +1,8 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Bot, Github, Twitter, Linkedin } from "lucide-react"
+import { Bot, Github, Facebook, Linkedin } from "lucide-react"
+import Link from "next/link"
 
 export function Footer() {
   return (
@@ -19,14 +20,50 @@ export function Footer() {
               assistance 24/7.
             </p>
             <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Twitter className="w-5 h-5" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-primary-foreground hover:bg-primary-foreground/10"
+                asChild
+              >
+                <a
+                  href="https://www.facebook.com/profile.php?id=100030461242600"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Github className="w-5 h-5" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-primary-foreground hover:bg-primary-foreground/10"
+                asChild
+              >
+                <a
+                  href="https://github.com/JATINKUMAR2005"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Linkedin className="w-5 h-5" />
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-primary-foreground hover:bg-primary-foreground/10"
+                asChild
+              >
+                <a
+                  href="https://www.linkedin.com/in/jatin-kumar-213609305/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
               </Button>
             </div>
           </div>
@@ -63,9 +100,9 @@ export function Footer() {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-primary-foreground/80">
               <li>
-                <a href="#" className="hover:text-primary-foreground transition-colors">
+                <Link href="/contact" className="hover:text-primary-foreground transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="hover:text-primary-foreground transition-colors">
@@ -87,7 +124,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; 2024 AI Assistant. All rights reserved.</p>
+          <p>&copy; 2025 AI Assistant. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
-import { Send, Bot, User, Home, Trash2, Copy, RotateCcw, Settings, MessageSquare } from "lucide-react"
+import { Send, Bot, User, Home, Trash2, Copy, RotateCcw, Settings, MessageSquare, Mail } from "lucide-react"
 import Link from "next/link"
 
 interface Message {
@@ -192,6 +192,13 @@ export default function ChatPage() {
             >
               <Trash2 className="w-4 h-4" />
               Clear Chat
+            </Button>
+
+            <Button variant="outline" size="sm" className="w-full justify-start gap-2 bg-transparent" asChild>
+              <Link href="/contact">
+                <Mail className="w-4 h-4" />
+                Contact Us
+              </Link>
             </Button>
 
             <Button variant="outline" size="sm" className="w-full justify-start gap-2 bg-transparent" disabled>

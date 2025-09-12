@@ -59,6 +59,16 @@ export function Hero() {
             >
               Learn More
             </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-lg px-8 py-6 border-primary/20 hover:bg-primary/5 bg-transparent"
+            >
+              <a href="../contact" className="">
+                Contact
+              </a>
+            </Button>
+
           </div>
 
           {/* Stats */}
